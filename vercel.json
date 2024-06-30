@@ -1,0 +1,43 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.php",
+            "use": "vercel-php@0.7.1"
+        },
+        {
+            "src": "**/*.php",
+            "use": "vercel-php@0.7.1"
+        },
+        {
+            "src": "dist/**",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "bower_components/**",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "js/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/dist/(.*)",
+            "dest": "/dist/$1"
+        },
+        {
+            "src": "/bower_components/(.*)",
+            "dest": "/bower_components/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/js/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.php"
+        }
+    ]
+}
