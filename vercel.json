@@ -1,32 +1,10 @@
 {
     "version": 2,
     "functions": {
-        "**/*.php": {
+        "api/*.php": {
             "runtime": "vercel-php@0.7.1"
         }
     },
-    "builds": [
-        {
-            "src": "index.php",
-            "use": "vercel-php@0.7.1"
-        },
-        {
-            "src": "**/*.php",
-            "use": "vercel-php@0.7.1"
-        },
-        {
-            "src": "dist/**",
-            "use": "@vercel/static"
-        },
-        {
-            "src": "bower_components/**",
-            "use": "@vercel/static"
-        },
-        {
-            "src": "js/**",
-            "use": "@vercel/static"
-        }
-    ],
     "routes": [
         {
             "src": "/dist/(.*)",
