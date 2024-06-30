@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <h2 align="center">Student Record Management System</h2>
+    <h2 align="center">College Management System</h2>
     <div class="container">
         <br><br><br><br>
 
