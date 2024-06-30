@@ -62,10 +62,10 @@ if (strlen($_SESSION['aid'] == 0)) {
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Student Registration</title>
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-		<link href="dist/css/sb-admin-2.css" rel="stylesheet">
-		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+		<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+		<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script type="text/javascript">
 			function showSub(val) {
