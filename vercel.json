@@ -1,25 +1,13 @@
 {
     "functions": {
         "api/**/*.php": {
-            "runtime": "vercel-php@0.7.1"
+            "runtime": "vercel-php@0.6.0"
         }
     },
-"routes": [
-    {
-        "src": "/dist/(.*)",
-        "dest": "/dist/$1"
-    },
-    {
-        "src": "/bower_components/(.*)",
-        "dest": "/bower_components/$1"
-    },
-    {
-        "src": "/js/(.*)",
-        "dest": "/js/$1"
-    },
-    {
-        "src": "/(.*)",
-        "dest": "api/index.php"
-    }
-]
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ]
 }
