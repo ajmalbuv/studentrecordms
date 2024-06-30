@@ -8,19 +8,19 @@
     "routes": [
         {
             "src": "/dist/(.*)",
-            "dest": "/dist/$1"
+            "dest": "api/dist/$1"
         },
         {
             "src": "/bower_components/(.*)",
-            "dest": "/bower_components/$1"
+            "dest": "api/bower_components/$1"
         },
         {
             "src": "/js/(.*)",
-            "dest": "/js/$1"
+            "dest": "api/js/$1"
         },
         {
             "src": "/(.*)",
-            "dest": "/index.php"
+            "dest": "api/index.php"
         }
     ]
 }
